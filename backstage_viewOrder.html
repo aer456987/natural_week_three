@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>最終關卡-後台-訂單管理</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <link rel="stylesheet" href="css\init\init_style.css">
+  <link rel="stylesheet" href="css\backstage\backstage.css">
+</head>
+
+<body>
+  <!-- 導覽列 -->
+  <nav>
+    <div class="container dis_flex flex_jc_space_between flex_align_i_center">
+
+      <a href="index.html" class="logos dis_flex flex_align_i_center">
+        <h3 class="icon">
+          <i class="fas fa-crow"></i>
+        </h3>
+        <h2 class="logo text_w_bold">natural</h2>
+      </a>
+      <div class="hamburger_list">
+        <ul class="dis_flex nav_links">
+          <li class="nav_link">
+            <a href="#">業績排行</a>
+          </li>
+          <li class="nav_link">
+            <a href="backstage_addProducts.html">新增產品</a>
+          </li>
+          <li class="nav_link">
+            <a href="backstage_products.html">產品維護</a>
+          </li>
+          <li class="nav_link">
+            <a href="backstage_viewOrder.html">訂單管理</a>
+          </li>
+          <li class="js_loginPage_btn nav_link">
+            <a href="#">登出</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- 主要內容 -->
+  <section class="warp">
+    <div class="container">
+      <div class="main_content">
+        <h1 class="backstage_title text_w_bold">訂單管理</h1>
+
+        <div class="dis_flex flex_jc_space_between flex_align_i_center">
+          <div>
+            <select>
+              <option value="全部訂單">全部訂單</option>
+              <option value="五月訂單">五月訂單</option>
+            </select>
+          </div>
+          <div>
+            <button type="button" class="js_reset_btn btn btn_green">
+              <i class="fas fa-undo"></i>
+            </button>
+            <button type="button" class="js_delAll_btn btn btn_red">全部刪除</button>
+          </div>
+        </div>
+
+        <table class="tabelLists">
+          <thead class="text_w_bold">
+            <tr>
+              <th width="10%">訂單編號</th>
+              <th width="10%">收件人</th>
+              <th width="10%">電話</th>
+              <th width="16%">收件地址</th>
+              <th width="17%">購買品項</th>
+              <th width="10%">訂單金額</th>
+              <th width="10%">付款狀態</th>
+              <th width="10%">訂單進度</th>
+              <th width="7%">操作</th>
+            </tr>
+          </thead>
+          <tbody class="orderListItem">
+            <tr>
+              <td colspan="9">功能開發中/目前無任何訂單</td>
+            </tr>
+            <!-- <tr>
+              <td data-title="訂單編號">202105110080555</td>
+              <td data-title="收件人">許首許</td>
+              <td data-title="電話">0912345678</td>
+              <td data-title="收件地址	">花東線台灣海峽區天文路大西洋巷999號5F </td>
+              <td data-title="購買品項">
+                鳥籠*5 <br>
+                飼料*3 <br>
+                玩具*10 <br>
+              </td>
+              <td data-title="訂單金額">7599</td>
+              <td data-title="付款狀態">未付款</td>
+              <td data-title="訂單進度">
+                <button type="button" class="js_order_status btn btn_green">待處理</button>
+              </td>
+              <td data-title="操作">
+                <button class="js_del_order del_order btn btn_red">
+                  <i class="far fa-trash-alt"></i>
+                </button>
+              </td>
+            </tr> -->
+
+          </tbody>
+        </table>
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <div class="container">
+      <p>僅為個人練習使用，非商用</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="js\config.js"></script>
+  <script src="js\order.js"></script>
+</body>
+</html>
